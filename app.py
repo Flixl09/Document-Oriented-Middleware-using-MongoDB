@@ -4,7 +4,7 @@ import sys
 from flask import Flask, current_app, g, send_from_directory, request
 from flask_pymongo import PyMongo
 
-from pymongo.errors import DuplicateKeyError, OperationFailure
+from pymongo.errors import DuplicateKeyError, OperationFailure, BulkWriteError
 import bson
 from bson.objectid import ObjectId
 from bson.errors import InvalidId
@@ -129,13 +129,17 @@ def delete_product(id):
 @app.route("/insert")
 def insert_data():
     db = get_db()
-    with open('warehouse.warehouse.json') as f:
-        data = bson.json_util.loads(f.read())
-        db.warehouse.insert_many(data)
-    run_product_pipe(db)
+    try:
+        with open('warehouse.warehouse.json') as f:
+            data = bson.json_util.loads(f.read())
+            db.warehouse.insert_many(data)
+        run_product_pipe(db)
+    except BulkWriteError:
+        return {"message": "Data already inserted"}
+    return {"message": "Data inserted successfully"}
 
 if __name__ == '__main__':
-    print("Server started")  # This should now work
+    print("Server started")
     sys.stdout.flush()
     app.run()
 
