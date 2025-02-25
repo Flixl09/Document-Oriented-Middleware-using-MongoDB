@@ -31,7 +31,7 @@ def favicon():
 
 @app.route("/warehouse")
 @app.route('/warehouse/<id>', methods=['GET'])
-def get_warehouse(id):
+def get_warehouse(id=None):
     db = get_db()
     if not id:
         return list(db.warehouse.find().sort("warehouseID", 1))
