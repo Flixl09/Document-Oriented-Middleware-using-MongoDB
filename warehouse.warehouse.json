@@ -1,0 +1,166 @@
+[{
+  "_id": "WH-002",
+  "warehouseID": 2,
+  "warehouseName": "Vienna Central",
+  "timestamp": "2022-02-15 10:30:00",
+  "warehousePostalCode": 1010,
+  "warehouseCity": "Vienna",
+  "warehouseCountry": "Austria",
+  "warehouseData": [
+    {
+      "productData": [
+        {
+          "productID": "02-123456",
+          "productName": "Coca-Cola 1L",
+          "productQuantity": 5000
+        },
+        {
+          "productID": "02-654321",
+          "productName": "Pepsi 1L",
+          "productQuantity": 4500
+        }
+      ]
+    }
+  ]
+},
+{
+  "_id": "WH-003",
+  "warehouseID": 3,
+  "warehouseName": "Graz Nord",
+  "timestamp": "2022-03-10 14:15:00",
+  "warehousePostalCode": 8010,
+  "warehouseCity": "Graz",
+  "warehouseCountry": "Austria",
+  "warehouseData": [
+    {
+      "productData": [
+        {
+          "productID": "03-987654",
+          "productName": "Milka Schokolade",
+          "productQuantity": 3200
+        },
+        {
+          "productID": "03-456789",
+          "productName": "Red Bull Energy Drink",
+          "productQuantity": 2800
+        },
+        {
+          "\"productID\"": "02-123456",
+          "\"productName\"": "Coca-Cola 1L",
+          "\"productQuantity\"": 5000
+        }
+      ]
+    }
+  ]
+},
+{
+  "_id": "WH-004",
+  "warehouseID": 4,
+  "warehouseName": "Salzburg Zentrum",
+  "timestamp": "2022-04-05 09:45:00",
+  "warehousePostalCode": 5020,
+  "warehouseCity": "Salzburg",
+  "warehouseCountry": "Austria",
+  "warehouseData": [
+    {
+      "productData": [
+        {
+          "productID": "04-112233",
+          "productName": "Nutella 750g",
+          "productQuantity": 1200
+        },
+        {
+          "productID": "04-445566",
+          "productName": "Kornspitz Brot",
+          "productQuantity": 5400
+        }
+      ]
+    }
+  ]
+},
+{
+  "_id": "WH-005",
+  "warehouseID": 5,
+  "warehouseName": "Innsbruck West",
+  "timestamp": "2022-05-20 16:20:00",
+  "warehousePostalCode": 6020,
+  "warehouseCity": "Innsbruck",
+  "warehouseCountry": "Austria",
+  "warehouseData": [
+    {
+      "productData": [
+        {
+          "productID": "05-778899",
+          "productName": "Tiroler Speck 500g",
+          "productQuantity": 1600
+        },
+        {
+          "productID": "05-112244",
+          "productName": "Almdudler 1L",
+          "productQuantity": 2200
+        }
+      ]
+    }
+  ]
+},
+{
+  "_id": "WH-006",
+  "warehouseID": 6,
+  "warehouseName": "Klagenfurt Süd",
+  "timestamp": "2022-06-12 13:10:00",
+  "warehousePostalCode": 9020,
+  "warehouseCity": "Klagenfurt",
+  "warehouseCountry": "Austria",
+  "warehouseData": [
+    {
+      "productData": [
+        {
+          "productID": "06-556677",
+          "productName": "Mozzarella Käse",
+          "productQuantity": 3500
+        },
+        {
+          "productID": "06-998877",
+          "productName": "Billa Bio Haferflocken",
+          "productQuantity": 4300
+        }
+      ]
+    }
+  ]
+},
+{
+  "_id": "WH-001",
+  "warehouseID": 1,
+  "warehouseName": "Linz Bahnhof",
+  "timestamp": "2022-01-02 01:00:00",
+  "warehousePostalCode": 4010,
+  "warehouseCity": "Linz",
+  "warehouseCountry": "Austria",
+  "warehouseData": [
+    {
+      "productData": [
+        {
+          "productID": "00-443175",
+          "productName": "Bio Orangensaft Sonne",
+          "productQuantity": 2500
+        },
+        {
+          "productID": "00-871895",
+          "productName": "Bio Apfelsaft Gold",
+          "productQuantity": 3420
+        },
+        {
+          "productID": "01-926885",
+          "productName": "Ariel Waschmittel Color",
+          "productQuantity": 478
+        },
+        {
+          "_id": "1",
+          "productID": "1",
+          "productName": "Brot Chips",
+          "productQuantity": 3000
+        }
+      ]
+    }
+  ]
+}]
